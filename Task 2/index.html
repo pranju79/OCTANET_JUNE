@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To Do List</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>To Do List</h1>
+    <center><br>
+    <div id="task-form">
+        <input type="text" id="task-input" placeholder="Enter task...">
+        <input type="date" id="deadline-input">
+        <select id="priority-input">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+        <button onclick="addTask()">Add Task</button>
+    </div>
+    <br>
+    <h2>Pending Tasks</h2>
+    <ul id="pending-tasks"></ul>
+    <br>
+    <h2>Completed Tasks</h2>
+    <ul id="completed-tasks"></ul>
+    </center>
+    <script src="script.js"></script>
+</body>
+</html>
